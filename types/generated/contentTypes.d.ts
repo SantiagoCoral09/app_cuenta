@@ -623,6 +623,8 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       }> &
       Attribute.DefaultTo<0>;
     celular: Attribute.String & Attribute.Required;
+    moneda: Attribute.Enumeration<['euro', 'cop', 'dolar']> &
+      Attribute.DefaultTo<'cop'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

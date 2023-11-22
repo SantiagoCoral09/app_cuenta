@@ -78,6 +78,15 @@
     "celular": {
       "type": "string",
       "required": true
+    },
+    "moneda": {
+      "type": "enumeration",
+      "enum": [
+        "euro",
+        "cop",
+        "dolar"
+      ],
+      "default": "cop"
     }
   }
 }
