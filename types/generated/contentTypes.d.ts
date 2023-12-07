@@ -616,7 +616,7 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'plugin::users-permissions.role'
     >;
     nombre: Attribute.String & Attribute.Required;
-    saldo: Attribute.Decimal &
+    saldo: Attribute.Float &
       Attribute.Required &
       Attribute.SetMinMax<{
         min: 0;
